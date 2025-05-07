@@ -1,5 +1,10 @@
 #!/bin/bash -e
 
+set -e
+
+# Remove pre-existing server.pid if present
+rm -f /rails/tmp/pids/server.pid
+
 # If running the rails server then create or migrate existing database
 if [ "${1}" == "./bin/rails" ] && [ "${2}" == "server" ]; then
   ./bin/rails db:migrate

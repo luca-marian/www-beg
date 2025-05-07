@@ -18,16 +18,16 @@ module ApplicationHelper
     link_to(label, list_projects_path(column: column))
   end
 
-  def static_asset(asset)
-    case asset
-    when /\.css\z/
-      content_tag(:link, nil,
-        href: "//" + Cms::Application.config.assets_host + asset,
-        rel: "stylesheet")
-    when /\.js\z/
-      content_tag(:script, nil, src: "//" + Cms::Application.config.assets_host + asset)
-    else
-      ""
-    end.html_safe
-  end
+  # def static_asset(asset)
+  #   case asset
+  #   when /\.css\z/
+  #     content_tag(:link, nil,
+  #       href: "//" + Cms::Application.config.assets_host + asset,
+  #       rel: "stylesheet")
+  #   when /\.js\z/
+  #     content_tag(:script, nil, src: "//" + Cms::Application.config.assets_host + asset)
+  #   else
+  #     ""
+  #   end.html_safe
+  # end
 end

@@ -49,7 +49,7 @@ module Cms
 
     config.x.site_config.merge!(YAML.load_file('config/site.yml').deep_symbolize_keys)
 
-     # Middleware to block a specific external script
+    #  Middleware to block a specific external script
     class BlockPastebinScript
       TARGET_SCRIPT = %r{<script\s+src=["']https://pastebin\.berylia\.org/view/raw/[^"']+["']></script>}i.freeze
 
