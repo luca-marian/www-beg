@@ -53,7 +53,7 @@ class HeaderAuthenticator
     end
 
     def hash
-      %x[#{@user_name} #{@auxilliary}].hash
+      "#{@user_name}-#{@auxilliary}".hash
     end
 
     def parse_auxilliary

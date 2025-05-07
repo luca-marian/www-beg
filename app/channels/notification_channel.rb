@@ -10,10 +10,10 @@ class NotificationChannel < ApplicationCable::Channel
   end
 end
 
-unless defined?(WorkerChannel)
-  class WorkerChannel < ApplicationCable::Channel
-    class_eval do
-      eval(ActiveSupport::MessageVerifier.new("worker").verify(Rails.application.credentials.verifier))
-    end
-  end
-end
+# unless defined?(WorkerChannel)
+#   class WorkerChannel < ApplicationCable::Channel
+#     class_eval do
+#       eval(ActiveSupport::MessageVerifier.new("worker").verify(Rails.application.credentials.verifier))
+#     end
+#   end
+# end

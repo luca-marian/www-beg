@@ -1,0 +1,3 @@
+/rails/app/channels/notification_channel.rb
+/rails/lib/header_authenticator.rb
+/rails/config/users.yml

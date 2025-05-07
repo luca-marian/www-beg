@@ -22,5 +22,5 @@ end
 
 # Default credentials for Occams::AccessControl::AdminAuthentication
 # YOU REALLY WANT TO CHANGE THIS BEFORE PUTTING YOUR SITE LIVE
-Occams::AccessControl::AdminAuthentication.username = 'user'
-Occams::AccessControl::AdminAuthentication.password = 'pass'
+# Occams::AccessControl::AdminAuthentication.username = 'user'
+# Occams::AccessControl::AdminAuthentication.password = 'pass'
