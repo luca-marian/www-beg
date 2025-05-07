@@ -1,0 +1,31 @@
+<%= action_cable_meta_tag %>
+
+<!-- Favicons -->
+<link href="/img/favicon.png" rel="icon">
+<link href="/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<%= cache('head_static_css') do %>
+<%= static_asset("/animate.css/animate.min.css") %>
+<%= static_asset("/bootstrap/v5.3.2/css/bootstrap.min.css") %>
+<%= static_asset("/bootstrap-icons/bootstrap-icons.css") %>
+<%= static_asset("/boxicons/css/boxicons.min.css") %>
+<%= static_asset("/glightbox/css/glightbox.min.css") %>
+<%= static_asset("/swiper/swiper-bundle.min.css") %>
+<!-- Template Main CSS File -->
+<%= stylesheet_link_tag "application" %>
+<%= stylesheet_link_tag occams_cms_render_css_path(@cms_site.id, @cms_layout.identifier) rescue nil %>
+<% end %>
+<!-- main JS -->
+<%= javascript_importmap_tags %>
+
+<!-- =======================================================
+* Template Name: Green
+* Updated: Sep 18 2023 with Bootstrap v5.3.2
+* Template URL: https://bootstrapmade.com/green-free-one-page-bootstrap-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+======================================================== -->

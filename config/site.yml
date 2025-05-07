@@ -1,0 +1,7 @@
+---
+name: "Berylian Energy Group BT05"
+domain: "beg.05.berylia.org"
+return_url: https://www.beg.05.berylia.org/auth/keycloak/callback
+oidc_issuer: https://sso.beg.05.berylia.org/realms/master
+oidc_client_id: www
+oidc_client_secret: SuperSecret.123

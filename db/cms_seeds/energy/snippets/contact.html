@@ -1,0 +1,75 @@
+[attributes]
+---
+label: contact
+categories: []
+position: 2
+[content]
+<!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Connect with Us for a Powerful Partnership</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>23 Power Lane, Cityville, State 54321</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@<%= Cms::Application.config.x.site_config.domain %></p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 234 5678 123</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            
+            <%= form_with(model: ContactForm.new, url: contacts_path, method: :post, class: 'email-form') do |f| %>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <%= f.label :name %>
+                  <%= f.text_field :name, class: 'form-control', required: true %>
+                </div>
+                <div class="form-group col-md-6 mt-3 mt-md-0">
+                  <%= f.label :email %>
+                  <%= f.email_field :email, class: 'form-control', required: true %>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <%= f.label :subject %>
+                <%= f.text_field :subject, class: 'form-control', required: true %>
+              </div>
+              <div class="form-group mt-3">
+                <%= f.label :message %>
+                <%= f.text_area :message, class: 'form-control', required: true, rows: 10 %>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><%= f.button 'Send Message', type: :submit %></div>
+            <% end %>
+            
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->

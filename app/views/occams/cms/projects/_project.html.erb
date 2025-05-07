@@ -1,0 +1,8 @@
+<tr>
+  <th scope="row"><%= project_counter+1 %></th>
+  <td><%= project.title %></td>
+  <td><%= project.description %></td>
+  <td>$<%= project.cost %>M USD</td>
+  <td><%= l project.begin_at.to_date %></td>
+  <td><%= l project.end_at.to_date %></td>
+</tr>

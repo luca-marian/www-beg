@@ -1,0 +1,14 @@
+<thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col"><%= projects_sort_link(column: "title", label: "Title") %></th>
+    <th scope="col">
+      <%= projects_sort_link(column: "description", label: "Description") %>
+    </th>
+    <th scope="col">
+      <%= projects_sort_link(column: "cost", label: "Budget (MUSD)") %>
+    </th>
+    <th scope="col"><%= projects_sort_link(column: "begin_at", label: "Started") %></th>
+    <th scope="col"><%= projects_sort_link(column: "end_at", label: "Ended") %></th>
+  </tr>
+</thead>

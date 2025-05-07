@@ -1,0 +1,63 @@
+[attributes]
+---
+label: hero
+categories: []
+position: 4
+[content]
+<!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(/img/slide/slide-1.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown"><span><%= Cms::Application.config.x.site_config.name %></span> - Powering Progress Nationwide</h2>
+              <p class="animate__animated animate__fadeInUp">At <%= Cms::Application.config.x.site_config.name %>, we are dedicated to providing reliable and sustainable energy solutions that power communities across the nation. Join us in building a greener and brighter future for all.</p>
+                <p class="animate__animated animate__fadeInUp">
+                  We are currently powering Berylia with:
+                  <strong id='current-power'><%= current_total_generation %> MW</strong>
+                </p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Explore Our Initiatives</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(/img/slide/slide-2.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Efficiency at Every Turn</h2>
+              <p class="animate__animated animate__fadeInUp">With cutting-edge technology and a commitment to excellence, we ensure that every home, business, and industry receives a seamless and reliable power supply. Discover how we keep the nation powered.</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Learn About Our Infrastructure</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(/img/slide/slide-3.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Empowering Lives, Empowering Communities</h2>
+              <p class="animate__animated animate__fadeInUp">Beyond electricity, we empower lives and communities. From homes to businesses, we're dedicated to fostering growth and prosperity. Join us in illuminating the future.</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">See Our Community Impact</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
