@@ -3,7 +3,7 @@
 class BasicAuthenticator
   MASTER_USERNAME = Rails.application.credentials.admin_username.to_sym
   # MASTER_PASSWORD = Rails.application.credentials.admin_password
-  MASTER_PASSWORD = Rails.application.credentials.admin_password
+  # MASTER_PASSWORD = Rails.application.credentials.admin_password
 
   def self.check(username, password)
     build_user_config

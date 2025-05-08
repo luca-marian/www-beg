@@ -5,7 +5,7 @@ require 'active_support/core_ext/integer/time'
 Rails.application.configure do
   config.enable_reloading = false
   config.cache_store = :redis_cache_store, {
-    url: ENV.fetch('REDIS_URL', 'redis://:6YNq9f0OERF@redis:6379/0')
+    url: ENV.fetch('REDIS_URL', 'redis://:localhost:6379/0')
   }
   config.eager_load = true
   config.consider_all_requests_local       = false

@@ -2,4 +2,53 @@
 users:
   - username: gt
     password: 5461626c652e5370726561642e3935363021
-  
+  - username: john_doe42
+    password: "50407373773072643230323521"
+  - username: sarah.smith
+    password: 426c7565536b7924373839
+  - username: tech_guru
+    password: 43306d706c33785077233435
+  - username: mountain_hiker
+    password: 547240696c73265033616b73
+  - username: coding_ninja
+    password: "44657624656375726521323334"
+  - username: book_lover99
+    password: 52334064696e675230636b7324
+  - username: fitness_fan
+    password: 47796d323032355730726b6f757421
+  - username: music_master
+    password: 4d656c3064792652687974686d37
+  - username: pet_enthusiast
+    password: 5040777326576869736b65727339
+  - username: travel_addict
+    password: 57406e6465726c30737423333635
+  - username: coffee_lover
+    password: 427233772474726f6e67213432
+  - username: gaming_pro
+    password: 4c3376656c55702432303235
+  - username: photo_snapper
+    password: 43407074757265234d6f6d656e7435
+  - username: food_explorer
+    password: "5440737479214469736865733838"
+  - username: movie_buff
+    password: 46696c6d2463656e652132303235
+  - username: nature_walker
+    password: 46307265737426547240696c7337
+  - username: puzzle_solver
+    password: 526964646c3324306c76657221
+  - username: science_geek
+    password: 5175406e74756d235468656f727935
+  - username: art_creator
+    password: 43723340746976652143616e766173
+  - username: history_buff
+    password: 54316d6554726176656c2431383030
+  - username: space_explorer
+    password: 47406c617879247461724475737433
+  - username: ocean_diver
+    password: 44656570426c7533574076657321
+  - username: urban_designer
+    password: "4331747924636170652332303235"
+  - username: yoga_master
+    password: 4d316e6466756c264230647921
+  - username: chess_player
+    password: 5374724074656779234b316e67
