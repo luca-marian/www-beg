@@ -1,5 +1,0 @@
-rails/app/views/main/_head.html.erb
-rails/app/views/main/_footer.html.erb
-rails/app/helpers/application_helper.rb
-rails/config/environments/development.rb
-rails/config/environments/production.rb

@@ -4,6 +4,10 @@
 ARG RUBY_VERSION=3.4.1
 FROM registry.docker.com/library/ruby:$RUBY_VERSION-slim as base
 
+RUN apt-get update -qq && \
+  apt-get install --no-install-recommends -y curl libvips postgresql-client nano vim && \
+  rm -rf /var/lib/apt/lists /var/cache/apt/archives
+
 # Rails app lives here
 WORKDIR /rails
 
@@ -20,6 +24,8 @@ FROM base as build
 # Install packages needed to build gems
 RUN apt-get update -qq && \
   apt-get install --no-install-recommends -y build-essential git libpq-dev libvips pkg-config
+
+# Install packages needed for deployment AND a text editor (nano/vim)
 
 # Install application gems
 COPY Gemfile Gemfile.lock ./
@@ -48,12 +54,10 @@ COPY --from=build /rails /rails
 
 RUN chmod +x /rails/bin/docker-entrypoint
 
-
 # Run and own only the runtime files as a non-root user for security
 RUN useradd rails --create-home --shell /bin/bash && \
   chown -R rails:rails db log storage tmp
 USER rails:rails
-
 
 # Entrypoint prepares the database.
 ENTRYPOINT ["/rails/bin/docker-entrypoint"]

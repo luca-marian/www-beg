@@ -22,3 +22,6 @@ Things you may want to cover:
 - Deployment instructions
 
 - ...
+
+
+/tmp/20250507-78-wm7w08-credentials.yml
